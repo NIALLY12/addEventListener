@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1b003a, #240058);
+  color: #ffffff;
+}
+
+canvas#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.painel {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  max-width: 600px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ff9dfc;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+button.girar {
+  transform: rotate(360deg);
+}
